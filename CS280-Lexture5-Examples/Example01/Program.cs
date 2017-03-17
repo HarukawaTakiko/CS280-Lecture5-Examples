@@ -1,4 +1,4 @@
-﻿using storeLibrary;
+﻿using StoreLibrary;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +15,7 @@ namespace Example01
             Console.Write("請輸入產品名稱:");
             product.Name = Console.ReadLine();
             Console.Write("請輸入{0}的價錢:", product.Name);
+            Console.WriteLine
             try
             {
                 int price = 0;
@@ -27,14 +28,9 @@ namespace Example01
                 Console.WriteLine("價格輸入錯誤");
                 return;
             }
-
-            Product product2 = new Product();
-            Console.Write("請輸入產品名稱:");
-            product2.Name = Console.ReadLine();
-            Console.Write("請輸入{0}的價錢:", product2.Name);
-            int price2 = 0;
-            price2 = int.Parse(Console.ReadLine());
-            product2.SetPrice(price2);
+            Console.WriteLine(product);
+            Product product2 = product
+            Console.WriteLine("Product2的 name: {0}"product2.Name);
         }
     }
 }
